@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipToPadding="true"
+    android:layout_height="wrap_content"
+    android:layout_width="104dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/stickerpack_sticker_button"
+        android:padding="12dp">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/stickerpack_sticker_icon"
+            android:background="@drawable/ic_sticker_empty"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

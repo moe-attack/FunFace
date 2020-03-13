@@ -1,0 +1,24 @@
+<resources>
+    <!-- UI String Resources. -->
+    <string name="app_name">FunFace</string>
+    <string name="crop_title">Crop</string>
+    <string name="next_global">Next</string>
+    <string name="edit_finish_button">Finish</string>
+    <string name="collection_main_header">Current Collection</string>
+    <string name="collection_main_new_button">New</string>
+    <string name="collection_detail_edit_button">Edit</string>
+    <string name="edit_title">Edit</string>
+    <string name="edit_size_scroll_bar">Size</string>
+    <string name="edit_color_scroll_bar">Color</string>
+    <string name="collection_new_title">New Collection</string>
+    <string name="collection_new_header">What is your new collection\'s name?</string>
+    <string name="collection_new_hint">Enter the name here</string>
+    <string name="collection_fragment_empty">There is nothing to be displayed!</string>
+    <string name="collection_default_name">Default</string>
+    <string name="toast_stickerpack_create_successful">Sticker pack successfully created!</string>
+    <string name="toast_stickerpack_delete_successful">Sticker pack successfully deleted!</string>
+
+
+    <!-- Utilities -->
+    <string name="util_input_digits">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/collection_navigation"
+    app:startDestination="@id/navigationCollection">
+
+    <fragment
+        android:id="@+id/navigationCollection"
+        android:name="com.example.funface.feature.CollectionFragment"
+        tools:layout="@layout/collection_fragment">
+        <action
+            android:id="@+id/collectionNewAction"
+            app:destination="@id/navigationCollectionNewName"
+            app:popUpTo="@id/navigationCollection"/>
+        <action
+            android:id="@+id/collectionToStickersAction"
+            app:destination="@id/navigationStickers"
+            app:popUpTo="@id/navigationCollection">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationCollectionNewName"
+        android:name="com.example.funface.feature.CollectionNameFragment"
+        tools:layout="@layout/collection_name_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationStickers"
+        android:name="com.example.funface.feature.StickerPackFragment"
+        tools:layout="@layout/stickerpack_fragment">
+        <argument
+            android:name="stickerpackName"
+            app:argType="string"/>
+    </fragment>
+</navigation>

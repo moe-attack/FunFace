@@ -18,27 +18,29 @@ The application provides learning oppurtunities for new developers who're into c
 # Progress
 The app is currently under development
 Check points:
--[x] Create foundation structures (StickerPackDataBase, Database Access Object, Repository)
--[x] Create foundation structures (Sticker, StickerPack)
--[x] Create type converter for StickerPack and Database
--[x] Create navigation graph
--[x] Create collection view (fragment, recycler view, adaptor)
--[x] Create collection view's view model
--[x] Create new collection view to add new StickerPack
--[x] Create feature to remove a StickerPack
--[x] Create StickerPack detail view (fragment, recycler view, adaptor)
--[x] Create StickerPack detail view's view model
--[x] Create connection to navigate to the unique stickerPack that has been tapped on in collection view
--[x] Create feature to add new sticker into a selected stickerPack
--[x] Create feature to remove a sticker from a selected StickerPack
--[] Create feature to create new directory for individual stickerPacks to store the stickers in app specific space
--[] Create feature to call the default Android gallery
--[] Create feature to select a photo and return it to FunFace app
--[] Create tools to compress a given photo into a given size
--[] Create cropping view (fragment)
--[] Create cropping view's view model to crop a photo
--[] Create edit view (fragment)
--[] Create tools to process the image (erase, draw, add text, change tool's pixel size)
--[] Create tools to save the processed image into StickerPack file directory
--[] Create animated splash screen
--[] Refactor the code and design to match Android's material design guideline--
+- [x] Create foundation structures (StickerPackDataBase, Database Access Object, Repository)
+- [x] Create foundation structures (Sticker, StickerPack)
+- [x] Create type converter for StickerPack and Database
+- [x] Create navigation graph
+- [x] Create collection view (fragment, recycler view, adaptor)
+- [x] Create collection view's view model
+- [x] Create new collection view to add new StickerPack
+- [x] Create feature to remove a StickerPack
+- [x] Create StickerPack detail view (fragment, recycler view, adaptor)
+- [x] Create StickerPack detail view's view model
+- [x] Create connection to navigate to the unique stickerPack that has been tapped on in collection view
+- [x] Create feature to add new sticker into a selected stickerPack
+- [x] Create feature to remove a sticker from a selected StickerPack
+- [] Create feature to create new directory for individual stickerPacks to store the stickers in app specific space
+- [] Create feature to call the default Android gallery
+- [] Create feature to select a photo and return it to FunFace app
+- [] Create tools to compress a given photo into a given size
+- [] Create cropping view (fragment)
+- [] Create cropping view's view model to crop a photo
+- [] Create edit view (fragment)
+- [] Create tools to process the image (erase, draw, add text, change tool's pixel size)
+- [] Create tools to save the processed image into StickerPack file directory
+- [] Create content providers to invoke the Whatsapp Application and import the stickers
+- [] Create animated splash screen
+- [] Create tools to use a background image throughout the application
+- [] Refactor the code and design to match Android's material design guideline

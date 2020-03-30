@@ -31,16 +31,16 @@ Check points:
 - [x] Create connection to navigate to the unique stickerPack that has been tapped on in collection view
 - [x] Create feature to add new sticker into a selected stickerPack
 - [x] Create feature to remove a sticker from a selected StickerPack
-- [] Create feature to create new directory for individual stickerPacks to store the stickers in app specific space
-- [] Create feature to call the default Android gallery
-- [] Create feature to select a photo and return it to FunFace app
-- [] Create tools to compress a given photo into a given size
-- [] Create cropping view (fragment)
-- [] Create cropping view's view model to crop a photo
-- [] Create edit view (fragment)
-- [] Create tools to process the image (erase, draw, add text, change tool's pixel size)
-- [] Create tools to save the processed image into StickerPack file directory
-- [] Create content providers to invoke the Whatsapp Application and import the stickers
-- [] Create animated splash screen
-- [] Create tools to use a background image throughout the application
-- [] Refactor the code and design to match Android's material design guideline
+- [ ] Create feature to create new directory for individual stickerPacks to store the stickers in app specific space
+- [ ] Create feature to call the default Android gallery
+- [ ] Create feature to select a photo and return it to FunFace app
+- [ ] Create tools to compress a given photo into a given size
+- [ ] Create cropping view (fragment)
+- [ ] Create cropping view's view model to crop a photo
+- [ ] Create edit view (fragment)
+- [ ] Create tools to process the image (erase, draw, add text, change tool's pixel size)
+- [ ] Create tools to save the processed image into StickerPack file directory
+- [ ] Create content providers to invoke the Whatsapp Application and import the stickers
+- [ ] Create animated splash screen
+- [ ] Create tools to use a background image throughout the application
+- [ ] Refactor the code and design to match Android's material design guideline

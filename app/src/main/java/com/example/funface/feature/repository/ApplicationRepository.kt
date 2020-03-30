@@ -17,8 +17,12 @@ class ApplicationRepository(private val dao: StickerPackDao) {
         dao.deleteStickerPack(stickerpack)
     }
 
-    suspend fun update(name: String, stickers: MutableList<Sticker>){
-        dao.updateStickersInStickerPack(name, stickers)
+    suspend fun update(primaryKey: Int, stickers: MutableList<Sticker>){
+        dao.updateStickersInStickerPack(primaryKey, stickers)
     }
 
+    suspend fun setUpStickers(stickerPackPrimaryKey: Int): StickerPack{
+        val stickerPack = dao.getStickerPack(stickerPackPrimaryKey)
+        return stickerPack[0]
+    }
 }

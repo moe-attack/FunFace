@@ -7,15 +7,15 @@ import com.example.funface.R
 import com.example.funface.feature.Sticker
 import com.example.funface.feature.StickerPack
 import com.example.funface.feature.viewModel.CollectionViewModel
+import com.example.funface.feature.viewModel.StickerPackViewModel
 import kotlinx.android.synthetic.main.stickerpack_sticker_button.view.*
 
-class StickerAdaptor(param: StickerPack, vmParam: CollectionViewModel): RecyclerView.Adapter<StickerAdaptor.ItemViewHolder>(){
+class StickerAdaptor(vmParam: StickerPackViewModel): RecyclerView.Adapter<StickerAdaptor.ItemViewHolder>(){
 
-    var stickers: List<Sticker>
-    var viewModel: CollectionViewModel
+    var stickers: MutableList<Sticker> = mutableListOf()
+    var viewModel: StickerPackViewModel
 
     init {
-        stickers = param.stickers
         viewModel = vmParam
         notifyDataSetChanged()
     }
@@ -26,8 +26,8 @@ class StickerAdaptor(param: StickerPack, vmParam: CollectionViewModel): Recycler
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         holder.itemView.apply{
-
             with(stickers.get(position)){
+                // TODO: Fix hardcoded imageFileName
                 if (imageFileName == ""){
                     stickerpack_sticker_icon.background = ResourcesCompat.getDrawable(resources, R.drawable.ic_edit_pen, null)
                 }
@@ -36,7 +36,7 @@ class StickerAdaptor(param: StickerPack, vmParam: CollectionViewModel): Recycler
 
     }
 
-    fun setStickerPack(stickersParam: List<Sticker>){
+    fun setUpStickers(stickersParam: MutableList<Sticker>){
         stickers = stickersParam
         notifyDataSetChanged()
     }

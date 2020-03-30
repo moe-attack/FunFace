@@ -36,8 +36,7 @@ class CollectionFragment: BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
         viewModel = ViewModelProvider(this).get(CollectionViewModel:: class.java)
         viewLayoutManager = GridLayoutManager(activity, 3)
-
-        viewAdapter = CollectionAdaptor(::listener, mutableListOf<StickerPack>(), viewModel)
+        viewAdapter = CollectionAdaptor(::listener, mutableListOf(), viewModel)
 
         with (collection_recyclerview){
             layoutManager = viewLayoutManager
@@ -67,6 +66,6 @@ class CollectionFragment: BaseFragment() {
     }
 
     fun listener(stickerPack: StickerPack){
-        navigator.selectAStickerPack(stickerPack.name)
+        navigator.selectAStickerPack(stickerPack.generatedPrimaryKey.toString())
     }
 }

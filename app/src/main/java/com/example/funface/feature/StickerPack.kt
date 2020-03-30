@@ -17,11 +17,13 @@ data class StickerPack (
 ): Parcelable {
     @IgnoredOnParcel
     @TypeConverters(StickerPackTypeConverter::class)
-    var stickers: List<Sticker> = listOf<Sticker>()
+    var stickers: MutableList<Sticker> = mutableListOf()
     @IgnoredOnParcel
     var totalSize: Long = 0
     @IgnoredOnParcel
     var androidPlayStoreLink: String = ""
+    @IgnoredOnParcel
+    var stickerCounter: Int = 0
 
     // TODO: set default value.
     var identifier: String = generatedPrimaryKey.toString()

@@ -33,9 +33,9 @@ class CollectionViewModel(@NonNull application: Application): AndroidViewModel(a
         }
     }
 
-    fun update(name: String, stickers: MutableList<Sticker>){
+    fun update(primaryKey: Int, stickers: MutableList<Sticker>){
         viewModelScope.launch {
-            repository.update(name, stickers)
+            repository.update(primaryKey, stickers)
         }
     }
 

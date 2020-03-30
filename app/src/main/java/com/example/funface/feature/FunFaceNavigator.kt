@@ -36,8 +36,9 @@ open class FunFaceNavigator {
                 if (popBackStack){
                     popBackStack()
                 }
-                direction.arguments.putString("stickerpackName", arg)
-                navigate(direction, navOptions)
+                var bundle = direction.arguments
+                bundle.putString("stickerpackPrimaryKey", arg)
+                navigate(direction.actionId, bundle, navOptions)
             }
         }
     }

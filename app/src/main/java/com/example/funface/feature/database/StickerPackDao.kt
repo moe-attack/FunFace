@@ -11,9 +11,12 @@ interface StickerPackDao {
     @Query("SELECT * FROM StickerPack")
     fun getAll(): LiveData<List<StickerPack>>
 
-    //Update stickers in a StickerPack
-    @Query("UPDATE StickerPack SET stickers = (:new_stickers) WHERE name = (:name)")
-    suspend fun updateStickersInStickerPack(name: String, new_stickers: MutableList<Sticker>)
+    @Query("SELECT * FROM StickerPack WHERE generatedPrimaryKey = (:stickerPackPrimaryKey)")
+    suspend fun getStickerPack(stickerPackPrimaryKey: Int): List<StickerPack>
+
+    //Update stickers in a StickerPack using the primary key of the StickerPack
+    @Query("UPDATE StickerPack SET stickers = (:new_stickers) WHERE generatedPrimaryKey = (:stickerPackPrimaryKey)")
+    suspend fun updateStickersInStickerPack(stickerPackPrimaryKey: Int, new_stickers: MutableList<Sticker>)
 
     //Create a stickerpack
     @Insert(onConflict = OnConflictStrategy.ABORT)

@@ -7,8 +7,8 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Sticker (
+    val identifier: Int,
     val imageFileName: String,
     val emojis: List<String>,
-    val size: Long,
-    val stickerPackName: String
+    val size: Long
 ) : Parcelable
